@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "shell.h": "c",
+        "ch.h": "c",
+        "*.inc": "cpp"
+    }
+}
