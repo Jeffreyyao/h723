@@ -5,7 +5,7 @@
 
 # Compiler options here.
 ifeq ($(USE_OPT),)
-  USE_OPT = -O2 -ggdb -fomit-frame-pointer -falign-functions=16
+  USE_OPT = -O2 -ggdb -fomit-frame-pointer -falign-functions=16 -lm
 endif
 
 # C specific options here (added to USE_OPT).
@@ -121,6 +121,8 @@ CSRC = $(ALLCSRC) \
        $(TESTSRC) \
        usbcfg.c \
        ws2812.c \
+       mlx90640/MLX90640_I2C_Driver.c \
+       mlx90640/MLX90640_API.c \
        main.c
 
 # C++ sources that can be compiled in ARM or THUMB mode depending on the global

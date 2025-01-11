@@ -169,8 +169,10 @@
 #define GPIOF_PIN11                 11U
 #define GPIOF_PIN12                 12U
 #define GPIOF_PIN13                 13U
-#define GPIOF_PIN14                 14U
-#define GPIOF_PIN15                 15U
+// #define GPIOF_MLX90614_SCL                 14U
+// #define GPIOF_MLX90614_SDA                 15U
+#define GPIOF_MLX90614_SCL          14U
+#define GPIOF_MLX90614_SDA          15U
 
 #define GPIOG_PIN0                  0U
 #define GPIOG_PIN1                  1U
@@ -953,8 +955,8 @@
                                      PIN_MODE_INPUT(GPIOF_PIN11) |          \
                                      PIN_MODE_INPUT(GPIOF_PIN12) |          \
                                      PIN_MODE_INPUT(GPIOF_PIN13) |          \
-                                     PIN_MODE_INPUT(GPIOF_PIN14) |          \
-                                     PIN_MODE_INPUT(GPIOF_PIN15))
+                                     PIN_MODE_ALTERNATE(GPIOF_MLX90614_SCL) |          \
+                                     PIN_MODE_ALTERNATE(GPIOF_MLX90614_SDA))
 #define VAL_GPIOF_OTYPER            (PIN_OTYPE_PUSHPULL(GPIOF_PIN0) |       \
                                      PIN_OTYPE_PUSHPULL(GPIOF_PIN1) |       \
                                      PIN_OTYPE_PUSHPULL(GPIOF_PIN2) |       \
@@ -969,8 +971,8 @@
                                      PIN_OTYPE_PUSHPULL(GPIOF_PIN11) |      \
                                      PIN_OTYPE_PUSHPULL(GPIOF_PIN12) |      \
                                      PIN_OTYPE_PUSHPULL(GPIOF_PIN13) |      \
-                                     PIN_OTYPE_PUSHPULL(GPIOF_PIN14) |      \
-                                     PIN_OTYPE_PUSHPULL(GPIOF_PIN15))
+                                     PIN_OTYPE_OPENDRAIN(GPIOF_MLX90614_SCL) |      \
+                                     PIN_OTYPE_OPENDRAIN(GPIOF_MLX90614_SDA))
 #define VAL_GPIOF_OSPEEDR           (PIN_OSPEED_VERYLOW(GPIOF_PIN0) |       \
                                      PIN_OSPEED_VERYLOW(GPIOF_PIN1) |       \
                                      PIN_OSPEED_VERYLOW(GPIOF_PIN2) |       \
@@ -985,8 +987,8 @@
                                      PIN_OSPEED_VERYLOW(GPIOF_PIN11) |      \
                                      PIN_OSPEED_VERYLOW(GPIOF_PIN12) |      \
                                      PIN_OSPEED_VERYLOW(GPIOF_PIN13) |      \
-                                     PIN_OSPEED_VERYLOW(GPIOF_PIN14) |      \
-                                     PIN_OSPEED_VERYLOW(GPIOF_PIN15))
+                                     PIN_OSPEED_HIGH(GPIOF_MLX90614_SCL) |      \
+                                     PIN_OSPEED_HIGH(GPIOF_MLX90614_SDA))
 #define VAL_GPIOF_PUPDR             (PIN_PUPDR_PULLUP(GPIOF_PIN0) |         \
                                      PIN_PUPDR_PULLUP(GPIOF_PIN1) |         \
                                      PIN_PUPDR_PULLUP(GPIOF_PIN2) |         \
@@ -1001,8 +1003,8 @@
                                      PIN_PUPDR_PULLUP(GPIOF_PIN11) |        \
                                      PIN_PUPDR_PULLUP(GPIOF_PIN12) |        \
                                      PIN_PUPDR_PULLUP(GPIOF_PIN13) |        \
-                                     PIN_PUPDR_PULLUP(GPIOF_PIN14) |        \
-                                     PIN_PUPDR_PULLUP(GPIOF_PIN15))
+                                     PIN_PUPDR_PULLUP(GPIOF_MLX90614_SCL) |        \
+                                     PIN_PUPDR_PULLUP(GPIOF_MLX90614_SDA))
 #define VAL_GPIOF_ODR               (PIN_ODR_HIGH(GPIOF_PIN0) |             \
                                      PIN_ODR_HIGH(GPIOF_PIN1) |             \
                                      PIN_ODR_HIGH(GPIOF_PIN2) |             \
@@ -1017,8 +1019,8 @@
                                      PIN_ODR_HIGH(GPIOF_PIN11) |            \
                                      PIN_ODR_HIGH(GPIOF_PIN12) |            \
                                      PIN_ODR_HIGH(GPIOF_PIN13) |            \
-                                     PIN_ODR_HIGH(GPIOF_PIN14) |            \
-                                     PIN_ODR_HIGH(GPIOF_PIN15))
+                                     PIN_ODR_HIGH(GPIOF_MLX90614_SCL) |            \
+                                     PIN_ODR_HIGH(GPIOF_MLX90614_SDA))
 #define VAL_GPIOF_AFRL              (PIN_AFIO_AF(GPIOF_PIN0, 0U) |          \
                                      PIN_AFIO_AF(GPIOF_PIN1, 0U) |          \
                                      PIN_AFIO_AF(GPIOF_PIN2, 0U) |          \
@@ -1033,8 +1035,8 @@
                                      PIN_AFIO_AF(GPIOF_PIN11, 0U) |         \
                                      PIN_AFIO_AF(GPIOF_PIN12, 0U) |         \
                                      PIN_AFIO_AF(GPIOF_PIN13, 0U) |         \
-                                     PIN_AFIO_AF(GPIOF_PIN14, 0U) |         \
-                                     PIN_AFIO_AF(GPIOF_PIN15, 0U))
+                                     PIN_AFIO_AF(GPIOF_MLX90614_SCL, 4U) |         \
+                                     PIN_AFIO_AF(GPIOF_MLX90614_SDA, 4U))
 
 /*
  * GPIOG setup:

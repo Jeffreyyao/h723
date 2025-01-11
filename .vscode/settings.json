@@ -2,6 +2,9 @@
     "files.associations": {
         "shell.h": "c",
         "ch.h": "c",
-        "*.inc": "cpp"
+        "*.inc": "cpp",
+        "stdlib.h": "c",
+        "mlx90640_i2c_driver.h": "c",
+        "stdint.h": "c"
     }
 }
